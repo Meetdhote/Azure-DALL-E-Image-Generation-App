@@ -17,49 +17,54 @@ The following Python libraries:
 - requests
 - dotenv
 
-# Setup
-Step 1: Clone the Repository
+
+## Setup
+
+### Step 1: Clone the Repository
 Clone the repository to your local machine:
 
-Copy code
 git clone https://github.com/yourusername/azure-dalle-image-gen.git
 cd azure-dalle-image-gen
 
-Step 2: Create a Virtual Environment
+
+### Step 2: Create a Virtual Environment
 To manage dependencies, create and activate a virtual environment:
 
-bash
-Copy code
-# For Linux/macOS
+#### For Linux/macOS:
+
 python3 -m venv venv
 source venv/bin/activate
 
-# For Windows
+
+#### For Windows:
+
 python -m venv venv
 .\venv\Scripts\activate
 
-Step 3: Install Dependencies
-Use pip to install the required libraries:
 
-Copy code
+### Step 3: Install Dependencies
+Use `pip` to install the required libraries:
+
 pip install -r requirements.txt
 
-Step 4: Setup the .env File
-To connect to Azure OpenAI, you’ll need to set your API keys and endpoints in a .env file. Create a .env file in the root directory with the following content:
 
-AZURE_OPENAI_API_KEY_DALL_E = your_azure_dalle_api_key
+### Step 4: Setup the `.env` File
+To connect to Azure OpenAI, you’ll need to set your API keys and endpoints in a `.env` file. Create a `.env` file in the root directory with the following content:
+
+AZURE_OPENAI_API_KEY_DALL_E=your_azure_dalle_api_key
 AZURE_OPENAI_ENDPOINT_DALL_E=https://your-azure-openai-endpoint.com
 AZURE_OPENAI_DEPLOYMENT_DALL_E=your_dalle_model_deployment_name
 
-Replace your_azure_dalle_api_key, your_azure_openai_endpoint, and your_dalle_model_deployment_name with your actual values from the Azure portal.
 
-Step 5: Run the Application
+Replace `your_azure_dalle_api_key`, `your_azure_openai_endpoint`, and `your_dalle_model_deployment_name` with your actual values from the Azure portal.
+
+### Step 5: Run the Application
 You can now run the image generation script by using the following command:
 
-bash
-Copy code
 python app.py
-This will generate an image based on the provided prompt, save it in the images/ directory, and display it.
+
+This will generate an image based on the provided prompt, save it in the `images/` directory, and display it.
+
 
 # Folder Structure
   ![{DEED4EA9-E8E4-4E44-87F2-620057F290A2}](https://github.com/user-attachments/assets/781208ab-5eb4-4f9b-b6ac-ef5ba88c1592)
