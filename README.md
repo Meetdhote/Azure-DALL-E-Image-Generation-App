@@ -21,10 +21,10 @@ The following Python libraries:
 Step 1: Clone the Repository
 Clone the repository to your local machine:
 
-bash
 Copy code
 git clone https://github.com/yourusername/azure-dalle-image-gen.git
 cd azure-dalle-image-gen
+
 Step 2: Create a Virtual Environment
 To manage dependencies, create and activate a virtual environment:
 
@@ -37,27 +37,20 @@ source venv/bin/activate
 # For Windows
 python -m venv venv
 .\venv\Scripts\activate
+
 Step 3: Install Dependencies
 Use pip to install the required libraries:
 
-bash
 Copy code
 pip install -r requirements.txt
+
 Step 4: Setup the .env File
 To connect to Azure OpenAI, you’ll need to set your API keys and endpoints in a .env file. Create a .env file in the root directory with the following content:
 
-bash
-Copy code
-# .env
-
-# Azure OpenAI API Key
-AZURE_OPENAI_API_KEY_DALL_E=your_azure_dalle_api_key
-
-# Azure OpenAI Endpoint
+AZURE_OPENAI_API_KEY_DALL_E = your_azure_dalle_api_key
 AZURE_OPENAI_ENDPOINT_DALL_E=https://your-azure-openai-endpoint.com
-
-# Azure OpenAI Deployment Name
 AZURE_OPENAI_DEPLOYMENT_DALL_E=your_dalle_model_deployment_name
+
 Replace your_azure_dalle_api_key, your_azure_openai_endpoint, and your_dalle_model_deployment_name with your actual values from the Azure portal.
 
 Step 5: Run the Application
@@ -69,17 +62,8 @@ python app.py
 This will generate an image based on the provided prompt, save it in the images/ directory, and display it.
 
 # Folder Structure
-bash
-Copy code
-azure-dalle-image-gen/
-│
-├── images/                # Contains generated images
-│   └── generated-image.png
-│
-├── .env                   # Environment variables file (not included in repo)
-├── app.py                 # Main Python script
-├── README.md              # This file
-├── requirements.txt       # Python dependencies
+  ![{DEED4EA9-E8E4-4E44-87F2-620057F290A2}](https://github.com/user-attachments/assets/781208ab-5eb4-4f9b-b6ac-ef5ba88c1592)
+
 Prompt Customization
 To modify the prompt for image generation, you can edit the prompt variable in the app.py script.
 
